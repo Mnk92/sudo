@@ -1,0 +1,1 @@
+Allows you to run programs with admin rights. For example you open console, run some commands and need to run one command with admin rights.
