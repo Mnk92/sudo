@@ -8,10 +8,10 @@ jobs:
     steps:
     - uses: actions/checkout@v3.0.0
     - name: Create build environment
-      run: cmake -E make_directory ${{github.workspace}}/build
+      run: cmake -E make_directory build
     - name: Configure
       working-directory: ${{github.workspace}}/build
-      run: cmake $GITHUB_WORKSPACE/src -D CMAKE_INSTALL_PREFIX=../
+      run: cmake ../src -D CMAKE_INSTALL_PREFIX=../
     - name: Build
       working-directory: ${{github.workspace}}/build
       run: cmake --build . --config $BUILD_TYPE --target install
