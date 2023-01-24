@@ -7,7 +7,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 add_compile_options(/W4 /WX)
 
 add_executable(${PROJECT_NAME}
-    main.cpp
+    src/main.cpp
     )
 set_target_properties(${PROJECT_NAME} PROPERTIES LINK_FLAGS "/MANIFESTUAC:\"level='requireAdministrator'\" /SUBSYSTEM:WINDOWS")
 
